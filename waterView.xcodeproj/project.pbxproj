@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54105EE81D34943C005AAFD2 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54105EE71D34943C005AAFD2 /* CollectionViewController.m */; };
+		54105EEB1D349557005AAFD2 /* waterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 54105EEA1D349557005AAFD2 /* waterLayout.m */; };
 		54F72C3F1D33A59C00D32F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F72C3E1D33A59C00D32F18 /* main.m */; };
 		54F72C421D33A59C00D32F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F72C411D33A59C00D32F18 /* AppDelegate.m */; };
 		54F72C451D33A59C00D32F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F72C441D33A59C00D32F18 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54105EE61D34943C005AAFD2 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		54105EE71D34943C005AAFD2 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		54105EE91D349557005AAFD2 /* waterLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waterLayout.h; sourceTree = "<group>"; };
+		54105EEA1D349557005AAFD2 /* waterLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = waterLayout.m; sourceTree = "<group>"; };
 		54F72C3A1D33A59C00D32F18 /* waterView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waterView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F72C3E1D33A59C00D32F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54F72C401D33A59C00D32F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +87,10 @@
 		54F72C311D33A59B00D32F18 = {
 			isa = PBXGroup;
 			children = (
+				54105EE91D349557005AAFD2 /* waterLayout.h */,
+				54105EEA1D349557005AAFD2 /* waterLayout.m */,
+				54105EE61D34943C005AAFD2 /* CollectionViewController.h */,
+				54105EE71D34943C005AAFD2 /* CollectionViewController.m */,
 				54F72C3C1D33A59C00D32F18 /* waterView */,
 				54F72C561D33A59C00D32F18 /* waterViewTests */,
 				54F72C611D33A59C00D32F18 /* waterViewUITests */,
@@ -270,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54105EE81D34943C005AAFD2 /* CollectionViewController.m in Sources */,
 				54F72C451D33A59C00D32F18 /* ViewController.m in Sources */,
 				54F72C421D33A59C00D32F18 /* AppDelegate.m in Sources */,
+				54105EEB1D349557005AAFD2 /* waterLayout.m in Sources */,
 				54F72C3F1D33A59C00D32F18 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +510,7 @@
 				54F72C691D33A59C00D32F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54F72C6A1D33A59C00D32F18 /* Build configuration list for PBXNativeTarget "waterViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				54F72C6C1D33A59C00D32F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54F72C6D1D33A59C00D32F18 /* Build configuration list for PBXNativeTarget "waterViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				54F72C6F1D33A59C00D32F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

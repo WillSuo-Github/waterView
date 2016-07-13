@@ -14,6 +14,8 @@
 
 @property (nonatomic, assign) NSInteger columnCount;
 
+@property (nonatomic, strong) NSArray<UICollectionViewLayoutAttributes *> * allAttArr;
+
 @end
 
 @implementation waterLayout
@@ -39,6 +41,10 @@
 }
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
+    
+    if (self.allAttArr) {
+        return self.allAttArr;
+    }
     
     NSMutableArray<UICollectionViewLayoutAttributes *> *AllAttArr = [NSMutableArray array];
     
@@ -75,9 +81,10 @@
 //        return CGRectIntersectsRect(rect, [evaluatedObject frame]);
 //    }]]);
     
-//    return [tmpArr filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+//    return [AllAttArr filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
 //        return CGRectIntersectsRect(rect, [evaluatedObject frame]);
 //    }]];
+    self.allAttArr = AllAttArr;
     return AllAttArr;
 }
 

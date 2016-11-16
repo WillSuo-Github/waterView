@@ -20,15 +20,7 @@
 
 @implementation waterLayout
 
-//- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    
-//    
-//    UICollectionViewLayoutAttributes *att = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-//    att.size = CGSizeMake(44, 44);
-//    att.center = CGPointMake(100, 100);
-//    return att;
-//}
+
 
 - (void)prepareLayout{
     
@@ -40,6 +32,7 @@
     self.cellCount = [self.collectionView numberOfItemsInSection:0];
 }
 
+//计算每个cell的位置
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
     
     if (self.allAttArr) {
@@ -77,13 +70,6 @@
         [AllAttArr addObject:att];
     }
     
-//    NSLog(@"%@",[tmpArr filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
-//        return CGRectIntersectsRect(rect, [evaluatedObject frame]);
-//    }]]);
-    
-//    return [AllAttArr filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
-//        return CGRectIntersectsRect(rect, [evaluatedObject frame]);
-//    }]];
     self.allAttArr = AllAttArr;
     return AllAttArr;
 }
